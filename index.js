@@ -76,6 +76,9 @@ async function run(){
 app.get('/',(req,res)=>{
     res.send('server is running! yehh!!!!');
 })
+app.get('/hello',(req,res)=>{
+    res.send('hello heroku?');
+})
 app.listen(port,()=>{
     console.log('Server Running on Port', port);
 })
